@@ -136,6 +136,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2509795879418365003, guid: f5933f281da730e4b81a0b93fe4fcaf3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2509795879418365003, guid: f5933f281da730e4b81a0b93fe4fcaf3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.2796586
       objectReference: {fileID: 0}
@@ -185,6 +189,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1376869390473144982, guid: f5933f281da730e4b81a0b93fe4fcaf3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 572998748}
+    - targetCorrespondingSourceObject: {fileID: 1376869390473144982, guid: f5933f281da730e4b81a0b93fe4fcaf3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 572998752}
   m_SourcePrefab: {fileID: 100100000, guid: f5933f281da730e4b81a0b93fe4fcaf3, type: 3}
 --- !u!1 &572998746 stripped
 GameObject:
@@ -263,6 +270,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6, y: 0.7}
   m_EdgeRadius: 0
+--- !u!114 &572998752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572998746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7340850702f4f7047983eb630886aae1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &1998318644
 GameObject:
   m_ObjectHideFlags: 0
