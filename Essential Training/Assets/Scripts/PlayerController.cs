@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     private float xAxis;
     public float yAxis;
