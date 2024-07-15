@@ -126,19 +126,82 @@ TextureImporter:
       name: Small
       rect:
         serializedVersion: 2
-        x: 51
-        y: 12
-        width: 67
-        height: 19
+        x: 17
+        y: 9
+        width: 64
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 67, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c11d1a66466df04cba0d42e4adc6284
-      internalID: 1888188383
+      spriteID: ec8e2f551bb7f3746a3745f1fd297d8d
+      internalID: -46553274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Single
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 8
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a226bb927cc15f49a665527ce7c1a6a
+      internalID: -173234476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medium
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 12
+        width: 139
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6751489065c0e4ca792997e3e871b4
+      internalID: 1010631334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 12
+        width: 200
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d64ca901105313d4aa6057bca6e9a7d4
+      internalID: 2013464752
       vertices: []
       indices: 
       edges: []
@@ -154,7 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Small: 1888188383
+      Large: 2013464752
+      Medium: 1010631334
+      Single: -173234476
+      Small: -46553274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
