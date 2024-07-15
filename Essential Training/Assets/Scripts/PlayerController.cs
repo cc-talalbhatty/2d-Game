@@ -7,14 +7,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private Rigidbody2D rigidBody;
     [SerializeField] public float jumpForce = 2f;
-
     private SpriteRenderer spriteRenderer;
     private bool isGrounded; // To check if the player is on the ground
+    private Animator animator;
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         rigidBody = GetComponent<Rigidbody2D>(); // Ensure rigidBody is assigned
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -25,12 +26,11 @@ public class PlayerController : MonoBehaviour
     }
 
     private void playerMovement()
-    {
-        xAxis = Input.GetAxisRaw("Horizontal");
-
-        // Move the player horizontally
+    {       
+        xAxis = Input.GetAxisRaw("Horizontal");          
         Vector3 movement = new Vector3(xAxis, 0f, 0f) * speed * Time.deltaTime;
         transform.Translate(movement);
+        
     }
 
     private void playerFlip()
