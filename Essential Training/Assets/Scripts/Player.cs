@@ -3,22 +3,28 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private float xAxis;
+    public float yAxis;
     [SerializeField] private float speed;
+    [SerializeField] private Rigidbody2D rigidBody;
+    [SerializeField] public float jumpForce = 2f;
 
     private SpriteRenderer spriteRenderer;
+    private bool isGrounded; // To check if the player is on the ground
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        rigidBody = GetComponent<Rigidbody2D>(); // Ensure rigidBody is assigned
     }
 
     void Update()
     {
-        PlayerMovement();
-        PlayerFlip();
+        playerMovement();
+        playerFlip();
+        playerJump();
     }
 
-    private void PlayerMovement()
+    private void playerMovement()
     {
         xAxis = Input.GetAxisRaw("Horizontal");
 
@@ -27,7 +33,7 @@ public class Player : MonoBehaviour
         transform.Translate(movement);
     }
 
-    private void PlayerFlip()
+    private void playerFlip()
     {
         // Flip sprite based on movement direction
         if (xAxis > 0)
@@ -40,6 +46,23 @@ public class Player : MonoBehaviour
             // Face left
             spriteRenderer.flipX = true;
         }
-        // No need to handle flip when xAxis == 0 (stay facing the current direction)
+    }
+
+    private void playerJump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            isGrounded = false; // Assume the player is in the air once they jump
+        }
+    }
+
+    // Check if the player is on the ground
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.contacts[0].normal.y > 0.5)
+        {
+            isGrounded = true; // Player is grounded if they collide with something below
+        }
     }
 }
