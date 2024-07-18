@@ -5,6 +5,7 @@ using UnityEngine;
 public class DoorTrigger : MonoBehaviour
 {
     public Door door;
+    public bool ignoreTrigger;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,9 @@ public class DoorTrigger : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (ignoreTrigger)
+            return;
+
         if (collision.gameObject.tag=="Player")
         {
             door.Open();
@@ -26,6 +30,9 @@ public class DoorTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if (ignoreTrigger)
+            return;
+
         if (collision.gameObject.tag == "Player")
         {
             door.Close();

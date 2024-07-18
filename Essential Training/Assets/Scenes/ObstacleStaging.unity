@@ -132,6 +132,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1511038664242947285, guid: 3a0626f8185a292469915dd90f94d27d, type: 3}
+      propertyPath: sticky
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511038664242947285, guid: 3a0626f8185a292469915dd90f94d27d, type: 3}
       propertyPath: doorTriggers.Array.size
       value: 1
       objectReference: {fileID: 0}
