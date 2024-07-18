@@ -6,6 +6,8 @@ public class AlienC : MonoBehaviour
 {
     public Animator animator;
     public float attackDelay = 3f;
+    public GameObject projectile;
+    private GameObject instantiatedProjectile;
 
     // Start is called before the first frame update
     void Start()
@@ -21,4 +23,9 @@ public class AlienC : MonoBehaviour
             animator.SetTrigger("Attack");
         }
     }
+    void shootProjectile()
+    {
+       instantiatedProjectile=Instantiate(projectile, transform.position, Quaternion.identity); 
+    }
+    
 }
