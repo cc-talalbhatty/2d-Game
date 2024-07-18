@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 1422105734865574862}
   - component: {fileID: 44247255744240635}
   - component: {fileID: 8758258939920767438}
+  - component: {fileID: 3759733762866137379}
+  - component: {fileID: 6241546255787909446}
+  - component: {fileID: 3804698178739295882}
   m_Layer: 0
   m_Name: crystal-sprites_0
   m_TagString: Untagged
@@ -144,3 +147,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crystal: {fileID: 2564622164041226505}
+--- !u!114 &3759733762866137379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2564622164041226505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf8e9c4d96ae08b45b555bb17e61515f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites: []
+  resourceName: crystal-sprites
+--- !u!114 &6241546255787909446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2564622164041226505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf8e9c4d96ae08b45b555bb17e61515f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites: []
+  resourceName: crystal-sprites
+--- !u!114 &3804698178739295882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2564622164041226505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf8e9c4d96ae08b45b555bb17e61515f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites: []
+  resourceName: crystal-sprites
