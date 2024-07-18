@@ -14,6 +14,7 @@ public class Door : MonoBehaviour
     private Animator animator;
     [SerializeField]
     private int closeDelay;
+    public Collider2D collider2D;
 
 
     // Start is called before the first frame update
@@ -27,7 +28,7 @@ public class Door : MonoBehaviour
     {
         
     }
-   public void onOpenstar()
+   public void onOpenstart()
    {
         state = opening;
    }
@@ -56,6 +57,15 @@ public class Door : MonoBehaviour
     {
         StartCoroutine(closeNow());
 
+    }
+    public void dissableCollider2D()
+    {
+       collider2D.enabled = false;
+
+    }
+    public void enableCollider2D()
+    {
+        collider2D.enabled = true;
     }
     private IEnumerator closeNow()
     {
