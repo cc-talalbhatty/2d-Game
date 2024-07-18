@@ -13,7 +13,7 @@ public class Door : MonoBehaviour
     private int state= idle;
     private Animator animator;
     [SerializeField]
-    private int closeDelay;
+    private float closeDelay;
     public Collider2D collider2D;
 
 

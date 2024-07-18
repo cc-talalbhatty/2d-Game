@@ -6,8 +6,8 @@ public class Switch : MonoBehaviour
 {
     public DoorTrigger[] doorTriggers;
     private Animator animator;
-    public bool down;
-    public bool sticky;
+    //public bool down;
+    //public bool sticky;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,7 @@ public class Switch : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         animator.SetInteger("AnimState", 1);
-        down = true;
+        //down = true;
 
         foreach (DoorTrigger trigger in doorTriggers) 
         {
@@ -37,8 +37,8 @@ public class Switch : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (sticky && down)
-            return;
+        //if (sticky && down)
+        //    return;
 
         animator.SetInteger("AnimState", 2);
         
