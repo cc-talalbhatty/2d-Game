@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Switch : MonoBehaviour
 {
+    public DoorTrigger[] doorTriggers;
     private Animator animator;
 
     // Start is called before the first frame update
@@ -20,12 +21,30 @@ public class Switch : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         animator.SetInteger("AnimState", 1);
+
+        foreach (DoorTrigger trigger in doorTriggers) 
+        {
+            if (trigger!=null)
+            {
+                trigger.toggle(true);
+            }
+
+        }
         
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         animator.SetInteger("AnimState", 2);
-            
+
+        foreach (DoorTrigger trigger in doorTriggers)
+        {
+            if (trigger != null)
+            {
+                trigger.toggle(false);
+            }
+
+        }
+
     }
 
 }

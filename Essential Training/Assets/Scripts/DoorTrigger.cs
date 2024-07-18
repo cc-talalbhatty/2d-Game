@@ -31,4 +31,15 @@ public class DoorTrigger : MonoBehaviour
             door.Close();
         }
     }
+    public void toggle(bool value)
+    {
+        if (value)
+        {
+            door.Open();
+        }
+        else
+        {
+            door.Close();
+        }
+    }
 }
