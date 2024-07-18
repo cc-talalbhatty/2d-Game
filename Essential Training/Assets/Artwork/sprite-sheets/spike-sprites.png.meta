@@ -126,82 +126,208 @@ TextureImporter:
       name: Small
       rect:
         serializedVersion: 2
-        x: 17
-        y: 9
-        width: 64
-        height: 22
+        x: 0
+        y: 0
+        width: 100
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec8e2f551bb7f3746a3745f1fd297d8d
+      spriteID: ccb0c4d3bd2e32b4f8ad6b59c698dd29
       internalID: -46553274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Single
+      name: large
       rect:
         serializedVersion: 2
-        x: 249
-        y: 8
-        width: 36
-        height: 24
+        x: 100
+        y: 0
+        width: 202
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a226bb927cc15f49a665527ce7c1a6a
-      internalID: -173234476
+      spriteID: 10c8c7531a46a7042b5940ba78e0c2ba
+      internalID: -361814351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Medium
+      name: spike-sprites_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 12
-        width: 139
-        height: 20
+        x: 200
+        y: 0
+        width: 100
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a6751489065c0e4ca792997e3e871b4
-      internalID: 1010631334
+      spriteID: d2cf1cb9bb5432849b881222171f0a68
+      internalID: 2044464934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Large
+      name: spike-sprites_3
       rect:
         serializedVersion: 2
-        x: 783
-        y: 12
-        width: 200
-        height: 20
+        x: 300
+        y: 0
+        width: 100
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d64ca901105313d4aa6057bca6e9a7d4
-      internalID: 2013464752
+      spriteID: 520e43ab0e78b8544a043ce018349b41
+      internalID: 1243611028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spike-sprites_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05a1ba833c97584f843d646b801249d
+      internalID: -1397407176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spike-sprites_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefeba147aee33a43b767f4d528b1661
+      internalID: -125258087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spike-sprites_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 100
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264dc857e8c86444f8ace434f9c6e034
+      internalID: -85588624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spike-sprites_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 100
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3e9473184a3164387e23d95fb9b7e9
+      internalID: -1686860193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spike-sprites_8
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 100
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87df905bddddd94aa2cb377f79fdf71
+      internalID: 513516600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spike-sprites_9
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 100
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b09131f90e14204aade1b163b61b8d2
+      internalID: 1300342170
       vertices: []
       indices: 
       edges: []
@@ -217,10 +343,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Large: 2013464752
-      Medium: 1010631334
-      Single: -173234476
       Small: -46553274
+      large: -361814351
+      spike-sprites_2: 2044464934
+      spike-sprites_3: 1243611028
+      spike-sprites_4: -1397407176
+      spike-sprites_5: -125258087
+      spike-sprites_6: -85588624
+      spike-sprites_7: -1686860193
+      spike-sprites_8: 513516600
+      spike-sprites_9: 1300342170
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
