@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -10,6 +11,8 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private bool isGrounded; // To check if the player is on the ground
     private Animator animator;
+    [SerializeField]
+    float yAxisMultiplier = 2f;
 
     void Start()
     {
@@ -27,10 +30,27 @@ public class PlayerController : MonoBehaviour
 
     private void playerMovement()
     {       
-        xAxis = Input.GetAxisRaw("Horizontal");          
-        Vector3 movement = new Vector3(xAxis, 0f, 0f) * speed * Time.deltaTime;
+        xAxis = Input.GetAxisRaw("Horizontal");
+        yAxis = Input.GetAxis("Vertical");
+        Vector3 movement = new Vector3(xAxis, yAxis*yAxisMultiplier, 0f) * speed * Time.deltaTime;
         transform.Translate(movement);
-        
+
+        if (xAxis != 0)
+        {
+            animator.SetInteger("AnimState", 1); // Walking
+        }
+        else
+        {
+            animator.SetInteger("AnimState", 0); // Idle
+        }
+        if (yAxis != 0) 
+        {
+            animator.SetInteger("AnimState", 2);     
+        }
+        else
+        {
+            animator.SetInteger("AnimState",0);
+        }
     }
 
     private void playerFlip()

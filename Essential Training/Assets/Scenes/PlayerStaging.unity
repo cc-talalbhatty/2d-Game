@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2509795879418365003, guid: f5933f281da730e4b81a0b93fe4fcaf3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.2796586
+      value: -2.69
       objectReference: {fileID: 0}
     - target: {fileID: 2509795879418365003, guid: f5933f281da730e4b81a0b93fe4fcaf3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -211,7 +211,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 0.03
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -286,6 +286,7 @@ MonoBehaviour:
   speed: 2
   rigidBody: {fileID: 572998747}
   jumpForce: 5
+  yAxisMultiplier: 4
 --- !u!1 &1998318644
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,7 +393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3658408327115387407, guid: 349673bd456e3e146b0374401950f3e9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.849
+      value: -2.34
       objectReference: {fileID: 0}
     - target: {fileID: 3658408327115387407, guid: 349673bd456e3e146b0374401950f3e9, type: 3}
       propertyPath: m_LocalPosition.y
