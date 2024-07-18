@@ -211,7 +211,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4580614692573970885, guid: 4582fb4108e067d4ab1eab7e8a56c61e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.1998682
+      value: -2.15
       objectReference: {fileID: 0}
     - target: {fileID: 4580614692573970885, guid: 4582fb4108e067d4ab1eab7e8a56c61e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 1541621139}
   - component: {fileID: 1541621140}
   m_Layer: 0
-  m_Name: spike-sprites_4
+  m_Name: Spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -452,7 +452,7 @@ Transform:
   m_GameObject: {fileID: 1541621136}
   serializedVersion: 2
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0.33, y: -1.494, z: 0}
+  m_LocalPosition: {x: 1.87, y: -1.497, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -503,7 +503,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.056320146}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -514,7 +514,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.32}
+  m_Size: {x: 1, y: 0.2073597}
   m_EdgeRadius: 0
 --- !u!114 &1604553927 stripped
 MonoBehaviour:
@@ -539,9 +539,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2395162815168652402, guid: f5933f281da730e4b81a0b93fe4fcaf3, type: 3}
+      propertyPath: jumpForce
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395162815168652402, guid: f5933f281da730e4b81a0b93fe4fcaf3, type: 3}
+      propertyPath: yAxisMultiplier
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2509795879418365003, guid: f5933f281da730e4b81a0b93fe4fcaf3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.386949
+      value: -3.09
       objectReference: {fileID: 0}
     - target: {fileID: 2509795879418365003, guid: f5933f281da730e4b81a0b93fe4fcaf3, type: 3}
       propertyPath: m_LocalPosition.y
