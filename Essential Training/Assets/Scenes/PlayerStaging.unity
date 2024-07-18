@@ -224,7 +224,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &572998748
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -234,7 +234,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 572998746}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 22626cad9e84ad447b9b690ad403712b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -286,7 +286,7 @@ MonoBehaviour:
   speed: 2
   rigidBody: {fileID: 572998747}
   jumpForce: 5
-  yAxisMultiplier: 4
+  yAxisMultiplier: 3.5
 --- !u!1 &1998318644
 GameObject:
   m_ObjectHideFlags: 0

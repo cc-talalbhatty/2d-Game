@@ -29,27 +29,25 @@ public class PlayerController : MonoBehaviour
     }
 
     private void playerMovement()
-    {       
+    {
         xAxis = Input.GetAxisRaw("Horizontal");
         yAxis = Input.GetAxis("Vertical");
-        Vector3 movement = new Vector3(xAxis, yAxis*yAxisMultiplier, 0f) * speed * Time.deltaTime;
+        float yAxisMultiplier = 2f; // Adjust this value as needed to exert more force on the y-axis
+
+        Vector3 movement = new Vector3(xAxis, yAxis * yAxisMultiplier, 0f) * speed * Time.deltaTime;
         transform.Translate(movement);
 
         if (xAxis != 0)
         {
             animator.SetInteger("AnimState", 1); // Walking
         }
+        else if (yAxis != 0)
+        {
+            animator.SetInteger("AnimState", 2); // Moving vertically
+        }
         else
         {
             animator.SetInteger("AnimState", 0); // Idle
-        }
-        if (yAxis != 0) 
-        {
-            animator.SetInteger("AnimState", 2);     
-        }
-        else
-        {
-            animator.SetInteger("AnimState",0);
         }
     }
 
