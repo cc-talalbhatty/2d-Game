@@ -25,7 +25,15 @@ public class AlienC : MonoBehaviour
     }
     void shootProjectile()
     {
-       instantiatedProjectile=Instantiate(projectile, transform.position, Quaternion.identity); 
+       instantiatedProjectile=Instantiate(projectile, transform.position, Quaternion.identity);
+       Invoke("DestroyProjectile", 1f);
     }
-    
+    void DestroyProjectile()
+    {
+        if (instantiatedProjectile != null)
+        {
+            Destroy(instantiatedProjectile);
+        }
+    }
+
 }
