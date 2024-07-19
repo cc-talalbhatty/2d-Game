@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded; // To check if the player is on the ground
     private Animator animator;
     [SerializeField]
-    float yAxisMultiplier = 2f;
+    float yAxisMultiplier = 5f;
 
     void Start()
     {
