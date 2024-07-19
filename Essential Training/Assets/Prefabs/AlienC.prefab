@@ -120,5 +120,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8523664625843156001}
-  attackDelay: 3
+  attackDelay: 5
   projectile: {fileID: 0}

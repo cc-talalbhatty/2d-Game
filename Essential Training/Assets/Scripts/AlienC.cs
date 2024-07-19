@@ -8,6 +8,7 @@ public class AlienC : MonoBehaviour
     public float attackDelay = 3f;
     public GameObject projectile;
     private GameObject instantiatedProjectile;
+    private List<GameObject> instantiatedProjectiles = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
@@ -26,13 +27,19 @@ public class AlienC : MonoBehaviour
     void shootProjectile()
     {
        instantiatedProjectile=Instantiate(projectile, transform.position, Quaternion.identity);
-       Invoke("DestroyProjectile", 1f);
+       instantiatedProjectiles.Add(instantiatedProjectile);
+       Invoke("DestroyProjectile", 3f);
     }
     void DestroyProjectile()
     {
-        if (instantiatedProjectile != null)
+        if (instantiatedProjectiles.Count > 0)
         {
-            Destroy(instantiatedProjectile);
+            GameObject projectileToDestroy = instantiatedProjectiles[0];
+            if (projectileToDestroy != null)
+            {
+                Destroy(projectileToDestroy);
+            }
+            instantiatedProjectiles.RemoveAt(0);
         }
     }
 
